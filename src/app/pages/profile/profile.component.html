@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-3 text-center">
+      <img [src]="user?.photoUrl" class="rounded" alt="avatar">
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <label>Name: </label>
+        <label class="pl-1">{{ user?.name }}</label>
+      </div>
+      <div class="row">
+        <label>Age: </label>
+        <label class="pl-1">{{ user?.age }}</label>
+      </div>
+      <div class="row">
+        <label>Gender: </label>
+        <label class="pl-1">{{ user?.gender }}</label>
+      </div>
+      <div class="row">
+        <label>Email: </label>
+        <label class="pl-1">{{ user?.email }}</label>
+      </div>
+    </div>
+  </div>
+</div>
