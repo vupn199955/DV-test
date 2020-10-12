@@ -19,6 +19,7 @@ export class AuthMiddleware implements CanActivate {
       first(),
       map((isAuth) => {
         if (!isAuth) {
+          alert('You have to login fist!');
           this.route.navigate(['/login']);
           return false;
         }

@@ -1,5 +1,8 @@
 <div class="container">
-  <div class="col-md-4 offset-md-4">
+  <mat-card class="col-md-4 offset-md-4 mt-5">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
     <div class="example-form">
       <app-gg-login-button (loginSucess)="onLoginGoogle($event)"></app-gg-login-button>
       <mat-form-field class="example-full-width">
@@ -15,5 +18,5 @@
         <button mat-button color="primary">Login</button>
       </div>
     </div>
-  </div>
+  </mat-card>
 </div>

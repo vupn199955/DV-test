@@ -19,7 +19,6 @@ export class GgLoginButtonComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.loadingBar.addLoading();
   }
 
   signInWithGoogle(): void {
@@ -31,11 +30,4 @@ export class GgLoginButtonComponent implements OnInit {
       this.loginError.emit(err);
     }).finally(() => this.loadingBar.removeLoading());
   }
-
-  signOut(): void {
-    this.ggService.signOut(true).then(() => {
-      this.logout.emit();
-    });
-  }
-
 }
